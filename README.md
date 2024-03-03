@@ -1,10 +1,10 @@
 # Instale o SonarQube com Ansible
 
-EC2
+#### EC2
 AMI: Amazon Linux 2023
 Type: t3.small
 
-RDS
+#### RDS
 Engine: Postgres
 Version: 15.6 R1
 
