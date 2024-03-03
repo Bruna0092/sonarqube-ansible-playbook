@@ -8,7 +8,7 @@ RDS
 Engine: Postgres
 Version: 15.6 R1
 
-Configure o IP da sua EC2 no arquivo [![inventario]([https://katherineoelsner.com/](https://github.com/Bruna0092/sonarqube-ansible-playbook/blob/main/inventario/hosts)
+Configure o IP da sua EC2 no arquivo [![inventario](https://github.com/Bruna0092/sonarqube-ansible-playbook/blob/main/inventario/hosts)
 Crie altere o caminho da chave .PEM
 
 
