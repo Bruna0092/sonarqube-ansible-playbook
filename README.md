@@ -16,7 +16,8 @@ https://img.shields.io/badge/teste-8A2BE2
 
 #### Execute o comando no diretorio do projeto
 
-```sudo ansible-playbook sonarqube.yml -i inventario/hosts
+```
+sudo ansible-playbook sonarqube.yml -i inventario/hosts
 ```
 
 #### Etapas:
