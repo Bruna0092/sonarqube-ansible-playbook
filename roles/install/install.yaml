@@ -1,0 +1,22 @@
+  - name: Extrair dir do Sonar
+    unarchive:
+      src: "{{ sonar_base }}{{ versao }}{{ type }}"
+      dest: "{{ sonar_base }}"
+      remote_src: yes
+  
+  - name: Move diretorio
+    shell: mv "{{ sonar_base }}{{ versao }}" "{{ sonar_home }}"
+    ignore_errors: true
+  
+  - name: Ajusta dono do diretorio
+    shell: chown -R sonar:sonar {{ sonar_home }}
+  
+  - name: Remove Instalador
+    file:
+      path: "{{ sonar_base }}{{ versao }}{{ type }}"
+      state: absent
+
+  - name: Remove Instalador
+    file:
+      path: "{{ sonar_base }}{{ versao }}"
+      state: absent

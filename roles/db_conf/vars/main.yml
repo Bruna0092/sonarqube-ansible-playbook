@@ -1,0 +1,7 @@
+sonar_db_name: sonar_db
+sonar_user_db: sonar
+sonar_pass_db: senhateste
+db_host: endpoint-you-bd
+db_master_user: postgres
+db_master_pass: masterpass
+db_default: PSTG

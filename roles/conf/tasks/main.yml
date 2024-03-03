@@ -1,0 +1,8 @@
+- name: Realiza pre-configuração
+  import_tasks: requisitos.yaml
+
+- name: Ajusta Memoria Virtual
+  import_tasks: ajustes_linux.yaml
+
+- name: Cria dir para o ElastiSearch
+  import_tasks: elasti_conf.yaml

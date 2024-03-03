@@ -1,0 +1,4 @@
+  - name: Download SonarQube
+    get_url:
+      url: "{{ download_url }}{{ versao }}{{ type }}"
+      dest: "{{ sonar_base }}"

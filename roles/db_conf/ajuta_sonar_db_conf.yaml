@@ -1,0 +1,6 @@
+  - name: Template sonar.properties
+    template: 
+      src=sonar.properties.j2 
+      dest=/opt/sonarqube/conf/sonar.properties
+      mode=644
+      

@@ -1,0 +1,5 @@
+- name: Configuração da DataBase
+  import_tasks: create_db_sonar.yaml
+
+- name: Configuração do sonar.properties
+  import_tasks: ajuta_sonar_db_conf.yaml

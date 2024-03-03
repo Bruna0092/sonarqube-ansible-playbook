@@ -1,0 +1,8 @@
+- name: Realiza Download
+  import_tasks: download.yaml
+
+- name: Realiza Instalação
+  import_tasks: install.yaml
+
+- name: Cria Service
+  import_tasks: service.yaml

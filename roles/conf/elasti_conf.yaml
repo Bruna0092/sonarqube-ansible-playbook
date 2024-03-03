@@ -1,0 +1,15 @@
+  - name: Cria diretorio DATA para o Elastisearch
+    file:
+      path: /var/sonarqube/data
+      state: directory
+      owner: sonar
+      group: sonar
+      mode: '0755'
+  
+  - name: Cria diretorio TEMP para o Elastisearch
+    file:
+      path: /var/sonarqube/temp
+      state: directory
+      owner: sonar
+      group: sonar
+      mode: '0755'

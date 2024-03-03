@@ -1,0 +1,17 @@
+  - name: Instala WGET, UNZIP, JAVA e postgreCLI
+    dnf:
+      name: 
+        - wget
+        - unzip
+        - postgresql15
+        #- jdk-21-headful
+        - java-17-amazon-corretto
+        - python3
+        - pip
+      state: latest
+    ignore_errors: true
+    
+  - name: Cria usuario de serviço do SonarQube
+    user:
+      name: sonar
+      comment: SonarQube user service

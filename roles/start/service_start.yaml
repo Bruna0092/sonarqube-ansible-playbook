@@ -1,0 +1,6 @@
+  - name: Start Sonarqube Service
+    service:
+      name: sonarqube
+      scope: sonar
+      state: started
+

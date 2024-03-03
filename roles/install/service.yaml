@@ -1,0 +1,12 @@
+  - name: Criar serviço do sonarqube
+    template: 
+      src=sonarqube.service.j2 
+      dest=/etc/systemd/system/sonarqube.service
+      mode=644
+    notify:
+    - reload systemctl
+  
+  - name: Enable Sonarqube Service
+    service:
+      name: sonarqube
+      enabled: yes

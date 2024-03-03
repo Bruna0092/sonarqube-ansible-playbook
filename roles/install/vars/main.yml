@@ -1,0 +1,5 @@
+download_url: https://binaries.sonarsource.com/Distribution/sonarqube/
+versao: sonarqube-9.9.4.87374
+type: .zip
+sonar_home: /opt/sonarqube/
+sonar_base: /opt/

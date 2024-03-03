@@ -1,0 +1,9 @@
+---
+  - name: Instalação SonarQube Server
+    hosts: aws
+    become: yes
+    roles:
+      - conf
+      - install
+      - db_conf
+      - start

@@ -1,0 +1,37 @@
+  - name: CREATE USER
+    postgresql_user:
+      login_host: "{{ db_host }}"
+      login_user: "{{ db_master_user }}"
+      login_password: "{{ db_master_pass }}"
+      db: "{{ db_default }}"
+      name: "{{ sonar_user_db }}"
+      password: "{{ sonar_pass_db }}" 
+
+  - name: CREATE DATABASE
+    postgresql_db:
+      login_host: "{{ db_host }}"
+      login_user: "{{ db_master_user }}"
+      login_password: "{{ db_master_pass }}"
+      name: "{{ sonar_db_name }}"
+      encoding: UTF-8
+
+  - name: GRANT ALL PRIVILEGES ON DATABASE
+    postgresql_privs:
+      login_host: "{{ db_host }}"
+      login_user: "{{ db_master_user }}"
+      login_password: "{{ db_master_pass }}"
+      db: "{{ db_default }}"
+      privs: ALL
+      type: database
+      obj: "{{ sonar_db_name }}"
+      role: "{{ sonar_user_db }}"
+  
+  - name: ALTER DATABASE OWNER
+    postgresql_owner:
+      login_host: "{{ db_host }}"
+      login_user: "{{ db_master_user }}"
+      login_password: "{{ db_master_pass }}"
+      db: "{{ db_default }}"
+      new_owner: "{{ sonar_user_db }}"
+      obj_name: "{{ sonar_db_name }}"
+      obj_type: database
