@@ -1,4 +1,4 @@
-# Instale o SonarQube com Ansible ⚙️
+# Instalando o SonarQube com Ansible ⚙️
 
 #### EC2 ☁️
 - AMI: Amazon Linux 2023
@@ -10,7 +10,6 @@
 
 #### Configure o IP da sua EC2 no arquivo [inventario](https://github.com/Bruna0092/sonarqube-ansible-playbook/blob/main/inventario/hosts)
 #### Altere o caminho da chave .PEM
-https://img.shields.io/badge/teste-8A2BE2
 
 #### Altere as os valores das variaveis do arquivo [db_conf/vars/main.yml](https://github.com/Bruna0092/sonarqube-ansible-playbook/blob/main/roles/db_conf/vars/main.yml)
 
